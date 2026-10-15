@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>العقارات | شركة العمالقة للتسويق العقاري والمقاولات</title>
+    <meta
+      name="description"
+      content="تصفح عقارات شركة العمالقة في دمياط — شقق، فلل، دوبلكس، وحدات تجارية بأسعار حقيقية"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="mark"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1c1405"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" /></svg
+          ></span>
+          <span
+            >شركة العمالقة<small
+              >للتسويق العقاري والمقاولات — دمياط</small
+            ></span
+          >
+        </a>
+        <nav class="links" id="links">
+          <a href="index.html" class="">الرئيسية</a>
+          <a href="about.html" class="">من نحن</a>
+          <a href="services.html" class="">خدماتنا</a>
+          <a href="properties.html" class="active">العقارات</a>
+          <a href="contact.html" class="">تواصل معنا</a>
+        </nav>
+        <button class="burger" id="burger" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section
+      class="page-hero"
+      style="background-image: url(&quot;images/villa-night.jpg&quot;)"
+    >
+      <div class="container">
+        <h1>عقاراتنا</h1>
+        <p class="crumb">الرئيسية ← العقارات</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="center">
+          <p class="sec-tag reveal">محدّثة يومياً</p>
+          <h2 class="sec-title reveal">تصفح عقارات دمياط</h2>
+          <p class="sec-sub reveal">
+            فلتر حسب نوع العقار وشوف التفاصيل — كل الوحدات بأسعار حقيقية وصور
+            فعلية.
+          </p>
+        </div>
+        <div class="filters reveal">
+          <button class="chip on" data-f="الكل">الكل</button>
+          <button class="chip" data-f="شقق">شقق</button>
+          <button class="chip" data-f="فلل">فلل</button>
+          <button class="chip" data-f="دوبلكس">دوبلكس</button>
+          <button class="chip" data-f="تجاري">تجاري</button>
+        </div>
+        <div class="grid-3" id="props" style="text-align: right"></div>
+        <p
+          id="propsFallback"
+          style="
+            display: none;
+            text-align: center;
+            color: var(--muted);
+            margin-top: 20px;
+          "
+        >
+          شغّل الباك إند (node server.js) لعرض العقارات من قاعدة البيانات — أو
+          ستظهر البيانات التجريبية تلقائياً.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container f-grid">
+        <div>
+          <h4>شركة العمالقة</h4>
+          <p>
+            شريكك الأمثل في البناء والتطوير في دمياط — تسويق عقاري، مقاولات
+            عامة، تراخيص، وحماية مدنية، بأعلى المعايير المهنية منذ أكثر من 15
+            عاماً.
+          </p>
+        </div>
+        <div>
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="properties.html">العقارات</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>خدماتنا</h4>
+          <ul>
+            <li><a href="services.html">التسويق العقاري</a></li>
+            <li><a href="services.html">المقاولات العامة</a></li>
+            <li><a href="services.html">استخراج التراخيص</a></li>
+            <li><a href="services.html">الحماية المدنية</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>تواصل معنا</h4>
+          <ul>
+            <li>📍 دمياط — شارع الجمهورية، أعلى البنك الأهلي</li>
+            <li>📞 <a href="tel:+201000000000" dir="ltr">0100 000 0000</a></li>
+            <li>💬 واتساب: <span dir="ltr">0100 000 0000</span></li>
+            <li>✉️ info@alomalaqa-eg.com</li>
+            <li>🕘 السبت — الخميس: 9ص إلى 9م</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        © <span id="year"></span> <b>شركة العمالقة</b> — جميع الحقوق محفوظة |
+        دمياط، جمهورية مصر العربية
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
